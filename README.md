@@ -37,7 +37,7 @@ jobs:
         shell: bash
     steps:
     - name: Deploy to CF
-      uses: evandropizaniramos/cf8-cli-action@main
+      uses: evandropizaniramos/cf8-cli-action@v0.0.4
       with:
         cf_api: https://api.cf.us10-001.hana.ondemand.com
         cf_user: ${{ secrets.CF_USER }}

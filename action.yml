@@ -1,5 +1,8 @@
 name: "CF CLI v8 Action"
 description: "Deploy and manage Cloud Foundry using the CF CLI v8"
+branding:
+  icon: cloud
+  color: green
 inputs:
   cf_api:
     description: "Target API Endpoint to Cloud Foundry"

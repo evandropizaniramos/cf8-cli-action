@@ -1,0 +1,26 @@
+name: "CF CLI v8 Action"
+description: "Deploy and manage Cloud Foundry using the CF CLI v8"
+inputs:
+  cf_api:
+    description: "Target API Endpoint to Cloud Foundry"
+    required: true
+  cf_user:
+    description: "User for API Authentication"
+    required: true
+  cf_pwd:
+    description: "Password for API Authentication"
+    required: true
+  cf_org:
+    description: "Target Organization"
+    required: false
+  cf_space:
+    description: "Target Space"
+    required: false
+  cf_command:
+    description: "Command to run using CF CLI v8"
+    required: true
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.command }}

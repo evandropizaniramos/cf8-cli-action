@@ -26,4 +26,4 @@ runs:
   using: "docker"
   image: "Dockerfile"
   args:
-    - ${{ inputs.command }}
+    - ${{ inputs.cf_command }}
